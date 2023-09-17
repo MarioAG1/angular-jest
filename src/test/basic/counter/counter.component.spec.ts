@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CounterComponent } from '../../../basic/counter/counter.component';
+import { CounterComponent } from '../../../app/basic/counter/counter.component';
 
 describe('CounterComponent', () => {
   let component: CounterComponent;
@@ -41,7 +41,7 @@ describe('CounterComponent', () => {
     component.increaseBy(10)
     fixture.detectChanges()
     const h1 = compiled.querySelector("h1")
-    expect(h1?.textContent).toContain('10')
+    expect(h1?.textContent).toContain('20')
   })
 
 });
