@@ -37,6 +37,8 @@
     "setupFilesAfterEnv": [
       "<rootDir>/setup-jest.ts"
     ],
+    "testEnvironment": "node",
+    "isolatedModules": true,
     "globalSetup": "jest-preset-angular/global-setup"
   }
 }
