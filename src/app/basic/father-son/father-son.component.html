@@ -1,0 +1,21 @@
+<h5>Hijo</h5>
+<code>{{ client | json }}</code>
+
+<br /><br />
+
+<button
+  class="btn btn-outline-primary me-2"
+  *ngIf="client"
+  (click)="onUpdate(4)"
+  data-test="btn-id"
+>
+  Cambiar ID
+</button>
+<button
+  class="btn btn-outline-danger"
+  *ngIf="client"
+  (click)="onDelete()"
+  data-test="btn-delete"
+>
+  Borrar cliente
+</button>
